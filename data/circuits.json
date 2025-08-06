@@ -14,7 +14,7 @@
         {"sector": 3, "length": 350, "position": "main_straight"}
       ],
       "lap_record": 103.003,
-      "base_lap_time": 105.5,
+      "base_lap_time": 85.5,
       "difficulty": 0.85
     },
     "monza": {
@@ -31,7 +31,7 @@
         {"sector": 2, "length": 500, "position": "back_straight"}
       ],
       "lap_record": 80.9,
-      "base_lap_time": 82.5,
+      "base_lap_time": 72.5,
       "difficulty": 0.6
     },
     "monaco": {
@@ -47,7 +47,7 @@
         {"sector": 3, "length": 180, "position": "main_straight"}
       ],
       "lap_record": 70.246,
-      "base_lap_time": 72.8,
+      "base_lap_time": 62.8,
       "difficulty": 0.95
     },
     "silverstone": {
@@ -64,7 +64,7 @@
         {"sector": 3, "length": 500, "position": "wellington_straight"}
       ],
       "lap_record": 85.892,
-      "base_lap_time": 87.2,
+      "base_lap_time": 77.2,
       "difficulty": 0.75
     }
   }

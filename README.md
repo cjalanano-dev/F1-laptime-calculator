@@ -1,8 +1,8 @@
-# 🏁 F1 Lap Time Calculator
+# F1 Lap Time Calculator
 
 A comprehensive Python tool for calculating and analyzing Formula 1 lap times based on circuit layout, car setup, weather conditions, and driver parameters.
 
-## 🎯 Features
+## Features
 
 - **Circuit Simulation**: Accurate modeling of F1 circuits with sector-by-sector analysis
 - **Car Configuration**: Detailed car setup including tires, fuel load, aerodynamics, and engine modes
@@ -12,7 +12,7 @@ A comprehensive Python tool for calculating and analyzing Formula 1 lap times ba
 - **Stint Simulation**: Multi-lap race simulation with degradation
 - **Setup Optimization**: Get optimal setup suggestions for each circuit
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 f1_lap_time_calculator/
@@ -31,7 +31,7 @@ f1_lap_time_calculator/
 └── README.md                  # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -93,7 +93,7 @@ result = simulator.simulate_full_lap(1)
 print(f"Lap time: {result['total_time']:.3f} seconds")
 ```
 
-## 🏎️ Available Options
+## Available Options
 
 ### Circuits
 - **spa**: Circuit de Spa-Francorchamps (Belgium)
@@ -121,25 +121,25 @@ print(f"Lap time: {result['total_time']:.3f} seconds")
 - **ERS Deployment**: auto, aggressive, conservative
 - **Driver Aggression**: 0.0-1.0 (conservative to maximum attack)
 
-## 📊 Sample Output
+## Sample Output
 
 ```
-🏁 F1 LAP TIME CALCULATION - LAP 1
+ F1 LAP TIME CALCULATION - LAP 1
 ============================================================
-⏱️  TOTAL LAP TIME: 1:43.524
+⏱ TOTAL LAP TIME: 1:43.524
 
-📊 SECTOR BREAKDOWN:
+SECTOR BREAKDOWN:
    Sector 1: 32.145s (DRS)
    Sector 2: 38.891s (DRS)
    Sector 3: 32.488s
 
-🌍 CONDITIONS:
+CONDITIONS:
    Circuit: Spa
    Weather: Dry
    Tires: Medium
    Fuel: 50kg
 
-📈 LAP STATISTICS:
+LAP STATISTICS:
    Fastest Sector: S1
    Slowest Sector: S2
    Theoretical Best: 1:41.234
@@ -147,7 +147,7 @@ print(f"Lap time: {result['total_time']:.3f} seconds")
    Tire Life: 95.2%
 ```
 
-## 🔧 Advanced Features
+## Advanced Features
 
 ### Tire Strategy Analysis
 
@@ -181,7 +181,7 @@ Get AI-powered setup suggestions:
 python main.py monaco medium 40 dry --suggestions
 ```
 
-## 🧪 Testing
+## Testing
 
 Run the comprehensive test suite:
 
@@ -195,7 +195,7 @@ Tests include:
 - Performance comparison tests
 - Edge case handling
 
-## 🔍 Technical Details
+## Technical Details
 
 ### Physics Model
 
@@ -218,23 +218,18 @@ Lap times are validated against real F1 data:
 ### Accuracy
 
 The simulator provides realistic relative comparisons rather than absolute precision. Factors affecting accuracy:
-- ✅ Tire compound differences
-- ✅ Fuel load effects
-- ✅ Weather impact
-- ✅ Setup optimization
-- ⚠️ Absolute lap times (±5% variance)
+- Tire compound differences
+- Fuel load effects
+- Weather impact
+- Setup optimization
+- Absolute lap times (±5% variance)
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
 ### Planned Features
-- [ ] GUI interface with Tkinter
 - [ ] Web interface with Streamlit
 - [ ] Real telemetry data integration
 - [ ] Visual track maps
-- [ ] AI lap time prediction
-- [ ] Damage and reliability modeling
-- [ ] Pit stop strategy optimization
-- [ ] Driver skill modeling
 
 ### Contributing
 
@@ -244,7 +239,7 @@ Feel free to contribute by:
 3. Adding new analysis features
 4. Creating visualization tools
 
-## 📝 Example Use Cases
+## Example Use Cases
 
 ### Race Strategy Planning
 ```bash
@@ -275,7 +270,7 @@ python main.py spa medium 70 dry --engine-mode conservation
 python main.py spa medium 70 dry --engine-mode race
 ```
 
-## 🏆 Acknowledgments
+## Acknowledgments
 
 - Circuit data based on official F1 circuit specifications
 - Tire performance data inspired by Pirelli compound characteristics
@@ -286,4 +281,4 @@ python main.py spa medium 70 dry --engine-mode race
 
 **Disclaimer**: This is a simulation tool for educational and entertainment purposes. Actual F1 performance depends on many additional factors not modeled here.
 
-Enjoy calculating those lap times! 🏁
+Enjoy calculating those lap times! 
