@@ -1,0 +1,71 @@
+{
+  "circuits": {
+    "spa": {
+      "name": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "length": 7004,
+      "sectors": [
+        {"number": 1, "length": 2400, "turns": 5, "type": "medium_speed", "elevation_change": 30},
+        {"number": 2, "length": 2800, "turns": 6, "type": "high_speed", "elevation_change": -15},
+        {"number": 3, "length": 1804, "turns": 8, "type": "mixed", "elevation_change": -10}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 600, "position": "kemmel_straight"},
+        {"sector": 3, "length": 350, "position": "main_straight"}
+      ],
+      "lap_record": 103.003,
+      "base_lap_time": 105.5,
+      "difficulty": 0.85
+    },
+    "monza": {
+      "name": "Autodromo Nazionale Monza",
+      "country": "Italy", 
+      "length": 5793,
+      "sectors": [
+        {"number": 1, "length": 2100, "turns": 4, "type": "high_speed", "elevation_change": 0},
+        {"number": 2, "length": 1900, "turns": 3, "type": "high_speed", "elevation_change": 0},
+        {"number": 3, "length": 1793, "turns": 4, "type": "medium_speed", "elevation_change": 0}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 800, "position": "main_straight"},
+        {"sector": 2, "length": 500, "position": "back_straight"}
+      ],
+      "lap_record": 80.9,
+      "base_lap_time": 82.5,
+      "difficulty": 0.6
+    },
+    "monaco": {
+      "name": "Circuit de Monaco",
+      "country": "Monaco",
+      "length": 3337,
+      "sectors": [
+        {"number": 1, "length": 1200, "turns": 6, "type": "low_speed", "elevation_change": 15},
+        {"number": 2, "length": 1000, "turns": 4, "type": "low_speed", "elevation_change": -8},
+        {"number": 3, "length": 1137, "turns": 9, "type": "low_speed", "elevation_change": -5}
+      ],
+      "drs_zones": [
+        {"sector": 3, "length": 180, "position": "main_straight"}
+      ],
+      "lap_record": 70.246,
+      "base_lap_time": 72.8,
+      "difficulty": 0.95
+    },
+    "silverstone": {
+      "name": "Silverstone Circuit",
+      "country": "United Kingdom",
+      "length": 5891,
+      "sectors": [
+        {"number": 1, "length": 2000, "turns": 6, "type": "high_speed", "elevation_change": 5},
+        {"number": 2, "length": 2100, "turns": 7, "type": "medium_speed", "elevation_change": -3},
+        {"number": 3, "length": 1791, "turns": 5, "type": "high_speed", "elevation_change": -2}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 750, "position": "hangar_straight"},
+        {"sector": 3, "length": 500, "position": "wellington_straight"}
+      ],
+      "lap_record": 85.892,
+      "base_lap_time": 87.2,
+      "difficulty": 0.75
+    }
+  }
+}

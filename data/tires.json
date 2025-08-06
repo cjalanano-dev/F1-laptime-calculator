@@ -1,0 +1,61 @@
+{
+  "tire_compounds": {
+    "soft": {
+      "name": "Soft (C5)",
+      "grip_modifier": 1.0,
+      "degradation_rate": 0.08,
+      "optimal_temp_range": [90, 110],
+      "peak_performance_laps": 8,
+      "life_span": 25,
+      "warm_up_time": 1.2,
+      "color": "red"
+    },
+    "medium": {
+      "name": "Medium (C4)",
+      "grip_modifier": 0.95,
+      "degradation_rate": 0.05,
+      "optimal_temp_range": [95, 115],
+      "peak_performance_laps": 15,
+      "life_span": 40,
+      "warm_up_time": 1.8,
+      "color": "yellow"
+    },
+    "hard": {
+      "name": "Hard (C3)",
+      "grip_modifier": 0.9,
+      "degradation_rate": 0.03,
+      "optimal_temp_range": [100, 120],
+      "peak_performance_laps": 25,
+      "life_span": 60,
+      "warm_up_time": 2.5,
+      "color": "white"
+    },
+    "intermediate": {
+      "name": "Intermediate",
+      "grip_modifier": 0.85,
+      "degradation_rate": 0.06,
+      "optimal_temp_range": [70, 90],
+      "peak_performance_laps": 12,
+      "life_span": 35,
+      "warm_up_time": 2.0,
+      "color": "green",
+      "wet_performance": 0.9
+    },
+    "wet": {
+      "name": "Full Wet",
+      "grip_modifier": 0.75,
+      "degradation_rate": 0.04,
+      "optimal_temp_range": [60, 80],
+      "peak_performance_laps": 20,
+      "life_span": 45,
+      "warm_up_time": 1.5,
+      "color": "blue",
+      "wet_performance": 1.0
+    }
+  },
+  "tire_temperature_effects": {
+    "cold": {"grip_loss": 0.15, "temp_threshold": 70},
+    "optimal": {"grip_bonus": 0.0, "temp_range": [90, 120]},
+    "overheated": {"grip_loss": 0.12, "temp_threshold": 130}
+  }
+}

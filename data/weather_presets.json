@@ -1,0 +1,67 @@
+{
+  "weather_conditions": {
+    "dry": {
+      "name": "Dry",
+      "grip_modifier": 1.0,
+      "visibility": 1.0,
+      "tire_temp_effect": 1.0,
+      "mistake_probability": 0.02,
+      "speed_modifier": 1.0,
+      "optimal_tire": ["soft", "medium", "hard"]
+    },
+    "damp": {
+      "name": "Damp",
+      "grip_modifier": 0.9,
+      "visibility": 0.95,
+      "tire_temp_effect": 0.85,
+      "mistake_probability": 0.08,
+      "speed_modifier": 0.92,
+      "optimal_tire": ["intermediate", "wet"]
+    },
+    "light_rain": {
+      "name": "Light Rain",
+      "grip_modifier": 0.8,
+      "visibility": 0.85,
+      "tire_temp_effect": 0.7,
+      "mistake_probability": 0.12,
+      "speed_modifier": 0.85,
+      "optimal_tire": ["intermediate"]
+    },
+    "heavy_rain": {
+      "name": "Heavy Rain",
+      "grip_modifier": 0.65,
+      "visibility": 0.7,
+      "tire_temp_effect": 0.6,
+      "mistake_probability": 0.18,
+      "speed_modifier": 0.75,
+      "optimal_tire": ["wet"]
+    },
+    "extreme_wet": {
+      "name": "Extreme Wet",
+      "grip_modifier": 0.5,
+      "visibility": 0.5,
+      "tire_temp_effect": 0.5,
+      "mistake_probability": 0.25,
+      "speed_modifier": 0.65,
+      "optimal_tire": ["wet"],
+      "safety_car_risk": 0.3
+    }
+  },
+  "track_conditions": {
+    "green": {
+      "name": "Green Track",
+      "grip_modifier": 0.92,
+      "description": "Little rubber laid down, slippery surface"
+    },
+    "rubbered_in": {
+      "name": "Rubbered In",
+      "grip_modifier": 1.0,
+      "description": "Optimal track conditions with good rubber buildup"
+    },
+    "dusty": {
+      "name": "Dusty",
+      "grip_modifier": 0.88,
+      "description": "Dust and debris on racing line"
+    }
+  }
+}
