@@ -1,9 +1,10 @@
-# F1 Lap Time Calculator
+# F1 Lap Time Calculator (TUI)
 
 A comprehensive Python tool for calculating and analyzing Formula 1 lap times based on circuit layout, car setup, weather conditions, and driver parameters.
 
 ## Features
 
+- **Interactive TUI**: Modern terminal user interface with real-time updates and visual feedback (Make sure your terminal supports curses and is at least 80x24 characters)
 - **Circuit Simulation**: Accurate modeling of F1 circuits with sector-by-sector analysis
 - **Car Configuration**: Detailed car setup including tires, fuel load, aerodynamics, and engine modes
 - **Weather Effects**: Realistic weather impact on grip and lap times
@@ -11,12 +12,14 @@ A comprehensive Python tool for calculating and analyzing Formula 1 lap times ba
 - **Strategy Analysis**: Compare different tire compounds and fuel loads
 - **Stint Simulation**: Multi-lap race simulation with degradation
 - **Setup Optimization**: Get optimal setup suggestions for each circuit
+- **Multiple Interfaces**: Choose between TUI, CLI, or interactive command-line modes
 
 ## Project Structure
 
 ```
 f1_lap_time_calculator/
 ├── main.py                     # Main application with CLI and interactive modes
+├── tui_calculator.py           # Terminal User Interface (TUI) with curses
 ├── data/
 │   ├── circuits.json          # Circuit data (Spa, Monaco, Monza, Silverstone)
 │   ├── tires.json             # Tire compound specifications
@@ -37,8 +40,46 @@ f1_lap_time_calculator/
 
 1. Clone or download the project
 2. No external dependencies required - uses only Python standard library
+3. Ensure your terminal supports colors and is at least 80x20 characters for the TUI
+
+### Getting Started
+
+**For the best experience, start with the TUI:**
+
+```bash
+python tui_calculator.py
+```
+
+**Or use the command-line interface:**
+
+```bash
+python main.py
+```
 
 ### Basic Usage
+
+#### Terminal User Interface (TUI) - Recommended
+
+Launch the interactive curses-based interface for the best experience:
+
+```bash
+python tui_calculator.py
+```
+
+The TUI provides:
+- **Real-time configuration**: Adjust settings and see lap times update instantly
+- **Visual interface**: Color-coded panels with easy navigation
+- **Quick analysis**: Built-in tire comparison, fuel strategy, and stint simulation
+- **Setup suggestions**: AI-powered recommendations for optimal car setup
+- **Weather comparison**: Compare different weather conditions side-by-side
+
+**Navigation:**
+- Use arrow keys to navigate menus
+- Press ENTER to select options
+- Press 'q' to quit at any time
+- ESC to cancel or go back
+
+**Requirements:** Terminal size of at least 80x20 characters (80x24 recommended)
 
 #### Command Line Interface
 
@@ -62,7 +103,7 @@ python main.py spa hard 70 dry --stint 15
 python main.py monaco medium 40 dry --suggestions
 ```
 
-#### Interactive Mode
+#### Interactive CLI Mode
 
 Simply run without arguments for guided setup:
 
@@ -149,7 +190,22 @@ LAP STATISTICS:
 
 ## Advanced Features
 
-### Tire Strategy Analysis
+### TUI Analysis Tools
+
+The Terminal User Interface provides quick access to all analysis features:
+
+1. **Configuration Panel**: Real-time lap time updates as you modify settings
+2. **Tire Comparison**: Compare all tire compounds instantly
+3. **Fuel Strategy**: Analyze different fuel loads and their impact
+4. **Stint Simulation**: Visualize tire degradation over multiple laps
+5. **Setup Suggestions**: Get AI-powered recommendations
+6. **Weather Comparison**: Compare performance across all weather conditions
+
+### Command-Line Analysis
+
+### Command-Line Analysis
+
+#### Tire Strategy Analysis
 
 Compare different tire compounds:
 
@@ -157,7 +213,7 @@ Compare different tire compounds:
 python main.py spa medium 50 dry --compare-tires
 ```
 
-### Fuel Effect Analysis
+#### Fuel Effect Analysis
 
 See how fuel load affects performance:
 
@@ -165,7 +221,7 @@ See how fuel load affects performance:
 python main.py monza medium 50 dry --fuel-strategy 20 40 60 80
 ```
 
-### Multi-Lap Stint Simulation
+#### Multi-Lap Stint Simulation
 
 Simulate tire degradation over multiple laps:
 
@@ -173,7 +229,7 @@ Simulate tire degradation over multiple laps:
 python main.py spa soft 60 dry --stint 20
 ```
 
-### Setup Optimization
+#### Setup Optimization
 
 Get AI-powered setup suggestions:
 
@@ -227,9 +283,11 @@ The simulator provides realistic relative comparisons rather than absolute preci
 ## Future Enhancements
 
 ### Planned Features
+- [ ] Enhanced TUI with graphical charts
 - [ ] Web interface with Streamlit
 - [ ] Real telemetry data integration
 - [ ] Visual track maps
+- [ ] Save/load configuration presets
 
 ### Contributing
 
@@ -241,7 +299,17 @@ Feel free to contribute by:
 
 ## Example Use Cases
 
-### Race Strategy Planning
+### Using the TUI (Recommended)
+
+1. **Launch TUI**: `python tui_calculator.py`
+2. **Navigate**: Use arrow keys to explore menu options
+3. **Modify Settings**: Select "Modify Configuration" to adjust circuit, tires, fuel, etc.
+4. **Quick Analysis**: Access tire comparison, fuel strategy, and stint simulation with one click
+5. **Real-time Updates**: See lap times change instantly as you modify settings
+
+### Command-Line Examples
+
+#### Race Strategy Planning
 ```bash
 # Compare tire strategies for a 20-lap stint
 python main.py spa soft 60 dry --stint 20
@@ -249,21 +317,21 @@ python main.py spa medium 60 dry --stint 20
 python main.py spa hard 60 dry --stint 20
 ```
 
-### Qualifying Setup Optimization
+#### Qualifying Setup Optimization
 ```bash
 # Find optimal downforce for qualifying
 python main.py monza soft 20 dry --downforce 3 --engine-mode quali
 python main.py monaco soft 20 dry --downforce 9 --engine-mode quali
 ```
 
-### Weather Strategy
+#### Weather Strategy
 ```bash
 # Compare tire choices in wet conditions
 python main.py silverstone intermediate 40 light_rain
 python main.py silverstone wet 40 heavy_rain
 ```
 
-### Fuel Saving Analysis
+#### Fuel Saving Analysis
 ```bash
 # Compare fuel conservation vs race pace
 python main.py spa medium 70 dry --engine-mode conservation
