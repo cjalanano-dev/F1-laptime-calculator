@@ -66,6 +66,154 @@
       "lap_record": 85.892,
       "base_lap_time": 77.2,
       "difficulty": 0.75
+    },
+    "bahrain": {
+      "name": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "length": 5412,
+      "sectors": [
+        {"number": 1, "length": 1800, "turns": 4, "type": "medium_speed", "elevation_change": 2},
+        {"number": 2, "length": 1900, "turns": 6, "type": "low_speed", "elevation_change": 0},
+        {"number": 3, "length": 1712, "turns": 5, "type": "medium_speed", "elevation_change": -2}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 700, "position": "main_straight"},
+        {"sector": 3, "length": 400, "position": "back_straight"}
+      ],
+      "lap_record": 90.558,
+      "base_lap_time": 81.5,
+      "difficulty": 0.7
+    },
+    "suzuka": {
+      "name": "Suzuka International Racing Course",
+      "country": "Japan",
+      "length": 5807,
+      "sectors": [
+        {"number": 1, "length": 2200, "turns": 7, "type": "mixed", "elevation_change": 25},
+        {"number": 2, "length": 1800, "turns": 6, "type": "high_speed", "elevation_change": -10},
+        {"number": 3, "length": 1807, "turns": 5, "type": "medium_speed", "elevation_change": -15}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 650, "position": "main_straight"}
+      ],
+      "lap_record": 87.895,
+      "base_lap_time": 79.2,
+      "difficulty": 0.9
+    },
+    "imola": {
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "length": 4909,
+      "sectors": [
+        {"number": 1, "length": 1650, "turns": 6, "type": "medium_speed", "elevation_change": 15},
+        {"number": 2, "length": 1500, "turns": 5, "type": "low_speed", "elevation_change": 20},
+        {"number": 3, "length": 1759, "turns": 8, "type": "mixed", "elevation_change": -35}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 500, "position": "main_straight"}
+      ],
+      "lap_record": 75.144,
+      "base_lap_time": 68.5,
+      "difficulty": 0.85
+    },
+    "australia": {
+      "name": "Albert Park Circuit",
+      "country": "Australia",
+      "length": 5278,
+      "sectors": [
+        {"number": 1, "length": 1800, "turns": 5, "type": "high_speed", "elevation_change": 3},
+        {"number": 2, "length": 1700, "turns": 6, "type": "medium_speed", "elevation_change": -2},
+        {"number": 3, "length": 1778, "turns": 5, "type": "medium_speed", "elevation_change": -1}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 600, "position": "main_straight"},
+        {"sector": 3, "length": 450, "position": "lakeside_straight"}
+      ],
+      "lap_record": 78.887,
+      "base_lap_time": 71.8,
+      "difficulty": 0.65
+    },
+    "brazil": {
+      "name": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "length": 4309,
+      "sectors": [
+        {"number": 1, "length": 1500, "turns": 4, "type": "medium_speed", "elevation_change": 30},
+        {"number": 2, "length": 1400, "turns": 6, "type": "low_speed", "elevation_change": -20},
+        {"number": 3, "length": 1409, "turns": 5, "type": "high_speed", "elevation_change": -10}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 800, "position": "main_straight"}
+      ],
+      "lap_record": 69.164,
+      "base_lap_time": 63.2,
+      "difficulty": 0.8
+    },
+    "canada": {
+      "name": "Circuit Gilles-Villeneuve",
+      "country": "Canada",
+      "length": 4361,
+      "sectors": [
+        {"number": 1, "length": 1500, "turns": 4, "type": "high_speed", "elevation_change": 0},
+        {"number": 2, "length": 1400, "turns": 5, "type": "low_speed", "elevation_change": 2},
+        {"number": 3, "length": 1461, "turns": 5, "type": "mixed", "elevation_change": -2}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 700, "position": "main_straight"},
+        {"sector": 3, "length": 450, "position": "back_straight"}
+      ],
+      "lap_record": 72.081,
+      "base_lap_time": 65.8,
+      "difficulty": 0.75
+    },
+    "singapore": {
+      "name": "Marina Bay Street Circuit",
+      "country": "Singapore",
+      "length": 5063,
+      "sectors": [
+        {"number": 1, "length": 1700, "turns": 7, "type": "low_speed", "elevation_change": 0},
+        {"number": 2, "length": 1600, "turns": 8, "type": "low_speed", "elevation_change": 0},
+        {"number": 3, "length": 1763, "turns": 8, "type": "medium_speed", "elevation_change": 0}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 500, "position": "main_straight"}
+      ],
+      "lap_record": 91.905,
+      "base_lap_time": 83.5,
+      "difficulty": 0.95
+    },
+    "austria": {
+      "name": "Red Bull Ring",
+      "country": "Austria",
+      "length": 4318,
+      "sectors": [
+        {"number": 1, "length": 1500, "turns": 3, "type": "high_speed", "elevation_change": 40},
+        {"number": 2, "length": 1400, "turns": 3, "type": "medium_speed", "elevation_change": -25},
+        {"number": 3, "length": 1418, "turns": 4, "type": "medium_speed", "elevation_change": -15}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 700, "position": "main_straight"},
+        {"sector": 3, "length": 500, "position": "back_straight"}
+      ],
+      "lap_record": 65.619,
+      "base_lap_time": 59.8,
+      "difficulty": 0.6
+    },
+    "hungary": {
+      "name": "Hungaroring",
+      "country": "Hungary",
+      "length": 4381,
+      "sectors": [
+        {"number": 1, "length": 1500, "turns": 5, "type": "low_speed", "elevation_change": 15},
+        {"number": 2, "length": 1400, "turns": 6, "type": "low_speed", "elevation_change": 10},
+        {"number": 3, "length": 1481, "turns": 3, "type": "medium_speed", "elevation_change": -25}
+      ],
+      "drs_zones": [
+        {"sector": 1, "length": 650, "position": "main_straight"}
+      ],
+      "lap_record": 76.627,
+      "base_lap_time": 69.8,
+      "difficulty": 0.85
     }
   }
 }
