@@ -203,8 +203,6 @@ The Terminal User Interface provides quick access to all analysis features:
 
 ### Command-Line Analysis
 
-### Command-Line Analysis
-
 #### Tire Strategy Analysis
 
 Compare different tire compounds:
